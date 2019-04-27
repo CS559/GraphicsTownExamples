@@ -34,6 +34,9 @@ import {SimpleHouse} from "./Examples/house.js";
 import {CircularTrack, TrackCube, TrackCar} from "./Examples/track.js";
 import {Helicopter, Helipad} from "./Examples/helicopter.js";
 
+/* extra examples */
+import {ShinySculpture} from "./Examples/shinySculpture.js";
+
 /**
  * The Graphics Town Main - 
  * This builds up the world and makes it go...
@@ -79,6 +82,9 @@ function grtown() {
     let copter = new Helicopter();
     world.add(copter);
     copter.getPads(world.objects);
+
+    /** the extra examples */
+    world.add(new ShinySculpture(world));
 
     /** EXAMPLES - end - things after this should stay                      */
     /********************************************************************** */
