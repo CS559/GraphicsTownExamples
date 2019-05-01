@@ -11,3 +11,5 @@ Students are allowed to use the examples in their assignments (with proper attri
 Things included beyond the original master repository:
 
 - A Dynamic Environment Map (used to make a "shiny sculpture", see `Examples/shinySculpture.js`)
+
+- A simple example of using mesh morphing

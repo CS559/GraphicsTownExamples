@@ -33,9 +33,8 @@ import { WorldUI } from "./Framework/WorldUI.js";
 import {SimpleHouse} from "./Examples/house.js";
 import {CircularTrack, TrackCube, TrackCar} from "./Examples/track.js";
 import {Helicopter, Helipad} from "./Examples/helicopter.js";
-
-/* extra examples */
 import {ShinySculpture} from "./Examples/shinySculpture.js";
+import {MorphTest} from "./Examples/morph.js";
 
 /**
  * The Graphics Town Main - 
@@ -65,6 +64,7 @@ function grtown() {
     let tc1 = new TrackCube(track);
     let tc2 = new TrackCube(track);
     let tc3 = new TrackCar(track);
+
     // place things are different points on the track
     tc2.u = 0.25;
     tc3.u = 0.125;
@@ -83,8 +83,9 @@ function grtown() {
     world.add(copter);
     copter.getPads(world.objects);
 
-    /** the extra examples */
     world.add(new ShinySculpture(world));
+
+    world.add(new MorphTest({x:10, y:3, r:2}));
 
     /** EXAMPLES - end - things after this should stay                      */
     /********************************************************************** */

@@ -24,3 +24,12 @@ Track / Cube / Car:
 Helicopter:
     A simple example in terms of geometry, but a more complex behavior.
     This is adapted (but re-written) from the 2015 assignment.
+
+ShinySculpture:
+    A simple example of a floating, shiny sphere that has a dynamic environment
+    map. It is ridiculously simple to implement since THREE takes care of all
+    of the hard parts.
+
+Morph:
+    Simple examples of using vertex/mesh morphing.
+    
